@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Startapp owner Sign In</title>
+    <link rel="stylesheet" href="../static/authentication/css/sign.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="{% static 'authntication/js/sign.js' %}" defer></script>
+  </head>
+
+  <body>
+    <nav>
+        
+      <div>
+          <a href="{% url 'home' %}">
+              <h1>Start-up Fund</h1>
+          </a>
+      </div>
+      
+      <div>
+          <a href="{% url 's_choice' %}">
+              <button>Sign Up</button> 
+          </a>
+          <a href="{% url 's_choice' %}">
+              <button>Sign In</button> 
+          </a>
+      </div>
+      
+  </nav>
+
+    <div class="container">
+      <header>Sign In</header>
+      
+      <div class="form-outer">
+        <form action="#">
+          <div class="page slide-page ">
+            <div class="title"></div>
+            <div class="field">
+              <div class="label">Email</div>
+              <input type="email">
+            </div>
+
+            <div class="field">
+                <div class="label">Password</div>
+                <input type="password">
+            </div>
+
+            <div class="field">
+              <button class="submit">Submit</button>
+              <p 
+              style="
+              margin-right: calc(1vw + 1vh);
+              margin-left: calc(1vw + 1vh);
+              "
+              >
+                Or
+              </p>
+              
+            <button class="next">
+                <a href="{% url 's_upowner' %}">Sign Up</a>
+            </button>
+              
+              
+            </div>
+          </div>
+
+
+          
+        </form>
+      </div>
+    </div>
+   
+
+  </body>
+</html>

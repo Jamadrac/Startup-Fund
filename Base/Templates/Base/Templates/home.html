@@ -1,0 +1,176 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <script src="{% static 'js/main.js' %}"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <nav>
+
+        <div>
+            <a href="{% url 'home' %}">
+                <h1>Start-up Fund</h1>
+            </a>
+           
+        </div>
+
+        <div class="dropdown" onclick="toggleDropdown()">
+            <img src="{% static 'images/Home/user-icon.webp' %}" >
+            <div class="dropdown-content">
+              <a href="#">Profile</a>
+              <a href="#">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+
+        
+
+        <div class="startups">
+            <div>
+                <button>
+                    <a href="{% url 's_form' %}">Add New StartApp</a> 
+                </button>
+            </div>
+            <section>
+                <div class="header">
+                    <div>
+                        <h1>Popular StartUps</h1>
+                    </div>
+                    <div>
+                        <p>View All</p>
+                    </div>
+                </div>
+    
+                <div class="companies">
+                    <a href="{% url 'overview' %}">
+                        <div class="company">
+                            <div><img src="{% static 'images/BlockByte.svg' %}" alt=""></div>
+                            <div><p>Blockbyte</p></div>
+                        </div>
+                    </a>
+                    
+    
+                    <div class="company">
+                        <div><img src="{% static 'images/Eagles View.svg' %}" alt=""></div>
+                        <div><p>Eagles View</p></div>
+                    </div>
+    
+                    <div class="company">
+                        <div><img src="{% static 'images/logo-closed-captioning-svgrepo-com.svg' %}" alt=""></div>
+                        <div><p>Coaches Crib</p></div>
+                    </div>
+    
+                    <div class="company">
+                        <div><img src="{% static 'images/square.avif' %}" alt=""></div>
+                        <div><p>Coaches Crib</p></div>
+                    </div>
+    
+                </div>
+            </section>
+
+            <section>
+                <div class="header">
+                    <div>
+                        <h1>New StartUps</h1>
+                    </div>
+                    <div>
+                        <p>View All</p>
+                    </div>
+                </div>
+    
+                <div class="companies">
+                    <div class="company">
+                        <div><img src="{% static 'images/Quick Pick.PNG' %}"></div>
+                        <div><p>Quick Pick</p></div>
+                    </div>
+    
+                    <div class="company">
+                        <div><img src="{% static 'images/Tangle.avif' %}" alt=""></div>
+                        <div><p>Tangle</p></div>
+                    </div>
+    
+                    <div class="company">
+                        <div><img src="{% static 'images/NERD.avif' %}" alt=""></div>
+                        <div><p>NERD</p></div>
+                    </div>
+    
+                    
+    
+                </div>
+            </section>
+
+            <section>
+                <div class="header">
+                    <div>
+                        <h1>Popular Investors</h1>
+                    </div>
+                   
+                </div>
+
+              
+            </section>
+
+
+        </div>
+       
+    </div>
+
+    <div class="investors">
+        <div class="investor">
+            <div>
+                <img src="{% static 'images/mike.jpg' %}" alt="">
+            </div>
+            <div>
+                <p>Mike Mcintyre</p>
+            </div>
+        </div>
+
+        <div class="investor">
+            <div>
+                <img src="{% static 'images/Catherine.jpg' %}" alt="">
+            </div>
+            <div>
+                <p>Catherine Archbold</p>
+            </div>
+        </div>
+
+        <div class="investor">
+            <div>
+                <img src="{% static 'images/David.jpg' %}" alt="">
+            </div>
+            <div>
+                <p>David Hangman</p>
+            </div>
+        </div>
+
+        
+        
+            <div class="investor">
+                <a href="{% url 'p_inv' %}">
+                    <div>
+                        <img src="{% static 'images/Kevin.jpg' %}" alt="">
+                    </div>
+                </a>
+                
+                <div>
+                    <p>Kevin Cena</p>
+                </div>
+            </div>
+        
+       
+        
+
+       
+
+        
+    </div>
+    
+</body>
+</html>

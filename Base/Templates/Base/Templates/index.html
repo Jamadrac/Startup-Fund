@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <script src="static/js/main.js" defer></script>
+    <title>Start-up Fund</title>
+</head>
+<body>
+    <nav>
+        
+        <div>
+            <a href="{% url 'home' %}">
+                <h1>Start-up Fund</h1>
+            </a>
+        </div>
+        
+        <div>
+            <a href="{% url 's_choice'%}">
+                <button>Sign Up</button> 
+            </a>
+            <a href="authentication/chosesign.html">
+                <button>Sign In</button> 
+            </a>
+        </div>
+        
+    </nav>
+    <div class="main">
+        <div class="intro">
+            <h1>Who Are We</h1>
+            <p>
+                Start-up Fund is a platform that brings together startups and founders with the aim of helping each party to benefit , startups benefiting from the exposure allowing investers to discover their startups leading to good business connections and funding
+            </p>
+        </div>
+        <div class="detail  reveal fade-bottom">
+            <h1 >What We Do</h1>
+            <ul>
+                <li>We connect Startups With Investers</li>
+                <li>Allow freelancers and job hunters to find opportunities </li>
+                <li>We help investers make financial decisions by providing necesary information on a startup</li>
+                <li>By listing your startup on our platform We give you publicity to investers </li>
+                <li>We allow you to find a company to acquire </li>
+            </ul>
+        </div>
+        
+        <div class="img-container">
+            <div class="img">
+                <img src="static/images/Index/Blockbyte-backround.PNG" alt="">
+            </div>
+        </div>
+
+        <div class="detail how">
+            <h1 class="reveal fade-left">How It Works</h1>
+            <div class="fade-in-out">
+                <p id="changing-text"></p>
+            </div>
+            <div>
+                <button>Get Started Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

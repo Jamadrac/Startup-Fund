@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: left;
+}
+
+/* OVERVIEW */
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    font-size: calc(1vh + 1vw);
+}
+
+.map{
+    display: flex;
+    gap: calc(5vh + 5vw);
+}
+
+.overview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: calc(5vw + 5vh);
+    width: calc(30vh + 30vw);
+}
+
+.overview li{
+    margin-bottom: calc(1vw + 1vh);
+    color: rgba(0, 0, 0, 0.612);
+}
+
+.profile-pic{
+    width: calc(20vh + 25vw);
+}
+
+/* CARD */
+
+.card{
+    position: fixed;
+    right: 0;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: calc(20vw + 20vh);
+    
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    height: calc(15vw + 15vh);
+
+    padding: calc(1vw + 1vh);
+    margin: calc(1vh + 1vw);
+    
+}
+
+.row{
+    display: flex;
+    gap: calc(3vh + 3vw);
+}
+
+button{
+    border: none;
+    background-color: rgba(1, 1, 255, 0.68);
+    color: white;
+    padding: calc(0.5vh + 0.5vw);
+}
+
+
+/* ABOUT */
+
+.hq-site{
+    display: flex;
+    gap: calc(5vw + 5vh);
+}
+
+.site p{ 
+    color: blue;
+    font-size: calc(1vw + 1vh);
+}
+
+.visit {
+    width: calc(1vw + 1vh);
+    padding: 0;
+    margin: 0;
+
+}
+
+/* TERMS */
+
+
+.content .details p,h1.h2,strong{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.content .details p{
+    color: rgba(0, 0, 0, 0.612);
+}
+
+.content .details{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    margin-bottom: calc(2vw + 2vh);
+}

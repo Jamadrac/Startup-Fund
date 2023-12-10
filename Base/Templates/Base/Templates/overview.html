@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/overview.css' %}">
+    <title>Blockbyte</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="{% url 'home' %}">
+                <h1>Start-up Fund</h1>
+            </a>
+            
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="overview">
+            <h1>Blockbyte</h1>
+            <div class="map">
+                
+                <a href="#Overview">
+                    <p>Overview</p>
+                </a>
+                <a href="#About">
+                    <p>About</p>
+                </a>
+                <a href="#Terms">
+                    <p>Terms</p>
+                </a>
+                
+                
+            </div>
+            <div >
+                <img src="{% static 'images/BlockByte.svg' %}" class="profile-pic" alt="">
+            </div>
+            
+            
+            <div id="Overview">
+                <h1>Overview</h1>
+                <h2>What you gain from Investing</h2>
+                <ul>
+                    <li>
+                        <strong>Innovative Technology Solutions:</strong>  BlockByte is dedicated to pushing the boundaries of technology. Its team of experts is focused on developing solutions that address critical challenges in various industries, from software development and artificial intelligence to cybersecurity and beyond
+                    </li>
+                    <li>
+                        <strong>Expertise in Emerging Technologies:</strong>  BlockByte is at the forefront of emerging technologies, positioning itself to capitalize on the next wave of industry trends. Its deep understanding of technologies like blockchain, machine learning, and IoT ensures that it remains a relevant player in a rapidly evolving tech landscape.
+                    </li>
+                    <li>
+                        <strong>Agile Development Practices:</strong>  BlockByte embraces agile methodologies, enabling it to swiftly adapt to changing market dynamics and deliver products that meet evolving customer needs
+                    </li>
+                </ul>
+            </div>
+
+            <div id="About">
+                <h1>About</h1>
+                <div class="intro">
+                    <div class="hq-site">
+                        <div class="hq">
+                            <h3>Headquaters</h3>
+
+                            <div class="details">
+                                <p><strong>Street</strong> 9 Main Street</p>
+                                <p><strong>City</strong> London</p>
+                                <p><strong>Postal Code</strong> N12 8VR</p>
+                            </div>
+                        </div>
+                        <div class="site">
+                            <h3>Website</h3>
+                            <p style="color: blue;">View Site <img src="{% static 'images/visit.png' %}" class="visit" alt=""></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="Terms">
+                <h1>Terms</h1>
+                <h2>Overview</h2>
+                <div class="content">
+
+                    <div class="details">
+                        <div>
+                            <p>PRICE PER SHARE</p>
+                            <strong>$2.50</strong>
+                        </div>
+                        <div>
+                            <p>VALUATION</p>
+                            <strong>$458,809.95</strong>
+                        </div>
+    
+                    </div>
+
+                    <div class="details">
+                        <div>
+                            <p>DEADLINE</p>
+                            <strong>Nov 7 ,2024</strong>
+                        </div>
+                        <div>
+                            <p>FUNDING GOAL</p>
+                            <strong>$1M</strong>
+                        </div>
+                    </div>
+                    
+                    <h2>Breakdown</h2>
+
+                    <div class="details">
+                        <div>
+                            <p>MIN INVESTMENT</p>
+                            <strong>$100</strong>
+                        </div>
+
+                        <div>
+                            <p>MAX INVESTMENT</p>
+                            <strong>$10,000</strong>
+                        </div>
+
+                        
+                        
+                    </div>
+
+                    <div class="details">
+                        <div>
+                            <p>OFERING TYPE</p>
+                            <strong>Equity</strong>
+                        </div>
+                        <div>
+                            <p>MIN SHARED OFFERED</p>
+                            <strong>250</strong>
+                        </div>
+                    </div>
+
+                    <div class="details">
+                        <div>
+                            <p>MAXIMUM SHARES OFFERED</p>
+                            <strong>25000</strong>
+                        </div>
+                        <div>
+                            <p>ASSET TYPE</p>
+                            <strong>Common Stock</strong>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h1>Founder</h1>
+                        <a href="{% url 'p_owner' %}">
+                            <img width="300" src="{% static 'images/forms/john.webp' %}" alt="">
+                            <h3 style="color: black;">John Kate</h3>
+                        </a>
+                      
+                    </div>
+
+                    <div>
+                        <a href="{% url 'checkout' %}">
+                            <button>Invest Now</button>
+                        </a>
+                        
+                    </div>
+                   
+                    
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="row">
+                    <div>
+                        <h4>Min inv</h4>
+                        <p>$100</p>
+                    </div>
+                   
+                    <div>
+                        <h4>Maximum Inv</h4>
+                        <p>$10,000</p>
+                    </div>
+                    
+                </div>
+               <div class="row">
+                    <div>
+                        <h4>Raised</h4>
+                        <p>$30,043.19  </p>
+                    </div>
+                    <div>
+                        <h4>Tot Investors</h4>
+                        <p>300</p>
+                    </div>
+               </div>
+
+            </div>
+            <div>
+                <a href="{% url 'checkout' %}">
+                    <button>Invest Now</button>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
