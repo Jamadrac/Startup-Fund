@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+html,body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    overflow-x: hidden;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.companies a{
+    color: black;
+}
+
+/* NAV */
+
+nav{
+    width: 100%;
+    height: 5rem;
+    background-color: rgba(1, 1, 255, 0.68);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: calc(0.5vw + 0.5vh);
+}
+
+nav h1{
+    color: white;
+    font-size: calc(2vh + 2vw);
+
+}
+
+nav img{
+    width: calc(2vh + 2vw);
+    padding-top: 4rem !important;
+    padding: calc(1vw + 1vh);
+    margin-right: calc(5vw + 5vh);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 120px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown.active .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    gap: calc(0.5vw + 0.5vh);
+    color: white !important;
+    background-color: rgba(1, 1, 255, 0.68);
+}
+
+/* MAIN CONTAINER */
+
+section{
+    margin: calc(3vw + 3vh);
+}
+.main-container{
+    margin-top: calc(1vh + 1vw);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.startups{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.startups button{
+    
+    border: none;
+    padding: calc(0.5vw + 0.5vh);
+    color: white;
+    background-color: rgba(1, 1, 255, 0.68);
+    margin: auto;
+}
+
+.startups .header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.startups .header h1{
+    font-size: calc(2vw + 2vh);
+}
+
+.startups .header p{
+    margin: 0;
+    padding: 0;
+
+    margin-top: 5vh;
+    color: rgb(46, 46, 162);
+    font-size: calc(1vh + 1vw);
+}
+
+.companies{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 1 1;
+    justify-content: space-between;
+    gap: calc(2vh + 2vw);
+}
+
+.company{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(10vw + 10vh);
+    padding: calc(1vw + 1vh);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.company img{
+    width: 100%;
+}
+
+.investors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: calc(2vw + 2vh);
+}
+
+.investors img{
+    width: calc(5vh + 5vw);
+    border-radius:50%;
+}
+
+.investors p{
+    font-size: calc(1vw + 1vh);
+    margin: auto;
+}
+
+/* .investor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+

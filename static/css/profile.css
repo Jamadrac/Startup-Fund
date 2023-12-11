@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+body,html {
+    margin: 0;
+    padding-top: 40px;
+    color: #2e323c;
+    background: white;
+    position: relative;
+    height: 100%;
+    padding: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.links{
+    color: blue;
+}
+
+strong{
+    color: gray;
+}
+
+.companies a{
+    color: black;
+}
+
+/* NAV */
+
+nav{
+    width: 100%;
+    height: 5rem;
+    background-color: rgba(1, 1, 255, 0.68);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: calc(2vw + 2vh);
+}
+
+nav h1{
+    color: white;
+    font-size: calc(2vh + 2vw);
+
+}
+
+nav img{
+    width: calc(2vh + 2vw);
+    padding-top: 4rem !important;
+    padding: calc(1vw + 1vh);
+    margin-right: calc(5vw + 5vh);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 120px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown.active .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    gap: calc(0.5vw + 0.5vh);
+    color: white !important;
+    background-color: rgba(1, 1, 255, 0.68);
+}
+
+.card-body{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: calc(2vw + 2vh);
+    padding-bottom: calc(5vh + 5vw);
+    margin-top: calc(5vh + 5vw);
+}
+
+.account-settings .user-profile {
+    margin: 0 0 1rem 0;
+    padding-bottom: 1rem;
+    text-align: center;
+    
+}
+.account-settings .user-profile .user-avatar {
+    margin: 0 0 1rem 0;
+}
+.account-settings .user-profile .user-avatar img {
+    width: calc(10vh + 10vw);
+    height: calc(10vh + 10vw);
+   
+}
+
+.form-group label{
+    font-size: calc(1vw + 1vh);
+}
+
+.account-settings .user-profile button,
+.text-left button{
+    margin-bottom: calc(1vw + 1vh);
+    border: none;
+    background-color:  rgba(1, 1, 255, 0.68) ;
+    color: white;
+    padding: calc(.5vw + 0.5vh);
+}
+.account-settings .user-profile h5.user-name {
+    margin: 0 0 0.5rem 0;
+}
+.account-settings .user-profile h6.user-email {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #9fa8b9;
+}
+.account-settings .about {
+    margin: 2rem 0 0 0;
+    text-align: center;
+}
+.account-settings .about h5 {
+    margin: 0 0 15px 0;
+    color: #007ae1;
+}
+.account-settings .about p {
+    font-size: 0.825rem;
+}
+.form-group input{
+    font-size: calc(1vw + 1vh);
+}
+.form-control {
+    border: 1px solid #cfd1d8;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    font-size: .825rem;
+    background: #ffffff;
+    color: #2e323c;
+}
+
+.btn-primary{
+    background-color: none;
+}
+
+.card {
+    background: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 1rem;
+}
