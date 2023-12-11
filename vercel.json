@@ -1,0 +1,13 @@
+{
+    "builds": [{
+        "src": "StartupFund/wsgi.py",
+        "use":"@vercel/python",
+        "config": { "maxLambSize" : "15mb", "runtime":"python3.9"}
+    }],
+    "routes":[
+        {
+            "src": "/(.*)",
+            "dest": "StartupFund/wsgi.py"
+        }
+    ]
+}
