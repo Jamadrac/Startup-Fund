@@ -10,7 +10,7 @@ __pycache__\*
 # Backup files # 
 *.bak 
 
-# If you are using PyCharm # 
+# If you are using PyCharm #  
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
