@@ -137,3 +137,11 @@ GitHub.sublime-settings
 !.vscode/launch.json 
 !.vscode/extensions.json 
 .history
+Scripts/sqlformat.exe
+Scripts/pip3.12.exe
+Scripts/pip3.exe
+Scripts/pip.exe
+Scripts/django-admin.exe
+Scripts/activate.bat
+Scripts/activate
+pyvenv.cfg
