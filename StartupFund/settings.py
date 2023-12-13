@@ -23,11 +23,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-gk3-cfc$m4d3b!#&8#fo0d0q-8y-dqhe*n-9(u#wi26w=@z2@n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#  turn off debug to test if white noise is working 
 
-# ALLOWED_HOSTS = ['*']
+# xxxxxxxxxxxxxxxx use '*' to allow all hosts xxxxxxxxxxxxxxxxxxxxxxxxx
+DEBUG = 0
 
-ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+#  ---------------this is  a cors thing -----------------
+ALLOWED_HOSTS = ['*']
+
 
 
 # Application definition
@@ -50,6 +53,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # xxxxxxxxxxxxxxxxxxxxxxxxx white noise add to middleware xxxxxxxxxxxxxxxxxxxxxxx
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'StartupFund.urls'
